@@ -8,7 +8,7 @@
 
   <body>
     <h1>A Brief History of HTML</h1>
-    <img
+    <img id="img-1"
       src="https://www.dvayweb.net/images/blogs/2016811916.jpg"
       alt="A computer keyboard with white keys and one green key in the center with HTML written on it."
     />
@@ -74,6 +74,13 @@
       <strong id="last-line">
         If the Web community liked them, they stayed. If not, they were
         removed.</strong>
+    </p>
+    <p>
+      <div class='parent'>
+        <div class='goodbye'>Goodbye</div>
+        <div class='goodbye'>Evergreen</div>
+        <div class="goodbye" id="right-block"></div>
+     </div>
     </p>
     <figure class="old-html">
       <h4>Here's a brief list of deprecated HTML tags:</h4>
@@ -180,6 +187,29 @@
     }
     #last-line {
       font-style: italic;
+    }
+    #img-1 {
+      height:254px;
+    }
+    .parent {
+      border: 1px transparent;
+      margin: .5rem;
+      padding: 1rem 1rem;
+      text-align:left
+    }
+    .goodbye {
+      display: inline-flex;
+      border: 1px solid brown;
+      padding: 5rem 5rem;
+      vertical-align: middle;
+      font-size: 50px;
+    }
+    #right-block {
+      display: inline-flex;
+      border: 1px transparent;
+      padding: 15px;
+      vertical-align: auto;
+
     }
 
   </style>
