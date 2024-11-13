@@ -8,6 +8,78 @@
 </head>
 
 <body>
+  <div class="parent-container">
+    <div class="div1">
+      <span>static position</span>
+
+    </div>
+    <div class="div2">
+      <span>relative position</span>
+
+    </div>
+    <div class="div3">
+      <span>sticky position</span>
+
+    </div>
+    <div class="div4">
+      <span>absolute position</span>
+
+    </div>
+    <div class="div5">
+      <span>fixed position</span>
+
+    </div>
+  </div>
 
 </body>
+
+<style>
+  .parent-container {
+    width: 60vw;
+    height: 200vh;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .div1 {
+    width: 200px;
+    height: 200px;
+    background-color:darkred;
+  }
+  .div2 {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    position: relative;
+    left: 20px;
+  }
+  .div3 {
+    width: 200px;
+    height: 200px;
+    background-color:gold;
+    position: sticky;
+    top: 50px;
+    left: calc(60vw + 100px)
+
+  }
+  .div4 {
+    width: 200px;
+    height: 200px;
+    background-color:darkorange;
+    position: absolute;
+    left: 400px;
+    right: 50px;
+  }
+  .div5 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: fixed;
+    bottom: 50px;
+    left: calc(60vw + 50px);
+  }
+
+</style>
+
 </html>
